@@ -1,0 +1,71 @@
+<!-- 
+	 텍스트 관련 CSS
+	 => font-size , font-family , font-weight
+	 => color
+	 ***1. text-decoration: none, underline , overline
+	    => 메뉴  , <a>
+	 2. text-transform : none , uppercase , lowercase
+	 3. text-shadow 
+	 ***4. white-space
+	 ***5. letter-spacing
+	 6. word-spacing
+	 ***7. text-align
+-->
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+	ul{
+		width: 700px;
+		background-color: #fc6;
+		color: black;
+	}
+	li{
+		width: auto;
+		list-style: none;
+		display: inline-block;
+		text-transform: uppercase;
+	}
+	a{
+		color: black;
+		text-decoration: none;
+		text-shadow: 5px 5px 3px #f00;
+	}
+	a:hover{
+		color: white;
+		text-decoration: overline;
+	}
+	table{
+		width: 600px;
+	}
+	pre{
+		white-space: pre-wrap;/*자동 줄바꿈*/
+		/*letter-spacing: 0.2em; 자간*/
+	}
+</style>
+</head>
+<body>
+  <ul>
+	  <li><a href="#">Home</a></li>
+	  <li><a href="#">Member</a></li>
+	  <li><a href="#">FreeBoard</a></li>
+	  <li><a href="#">Recommand</a></li>
+	  <li><a href="#">MyPage</a></li>
+  </ul>
+  <table>
+	  <tr>
+		  <td><pre>KIA 타이거즈는 양석환 영입에 한걸음 떨어져 있었다. 물론, 아예 생각이 없었던 것은 아니지만, 적극적이지 않았고 오히려 김선빈에게 총력을 기울이고 있었다.
+
+물론, 셀러리캡의 이유도 있다. 하지만 그것만이 전부는 아니다.</pre></td>
+	  </tr>
+  </table>
+</body>
+</html>
+
+
+
+
+
+
