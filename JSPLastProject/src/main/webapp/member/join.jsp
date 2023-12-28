@@ -48,7 +48,7 @@ $(function(){
 <body>
    <div class="wrapper row3">
      <main class="container clear">
-        <h2 class="sectiontitle"></h2>
+        <h2 class="sectiontitle">회원가입</h2>
       <div class="row row1">
       <form method="post" action="../member/join_ok.do" name="frm">
          <table class="table">
