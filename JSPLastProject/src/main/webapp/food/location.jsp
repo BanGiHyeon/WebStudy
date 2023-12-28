@@ -37,7 +37,15 @@ $(function(){
 				
 				$('#name').html(json.name+'<span style="color:orange">'+json.score+'</span>')
 				$('#type').text(json.type)
-				$('#theme').text(json.theme)
+				let temp=json.theme
+				let theme=temp.split(",")
+				let html='<ul>'
+				for(let t of theme)
+				{
+					html+='<li>'+t+'</li>'
+				}
+				html+='</ul>'
+				$('#theme').html(html)
 				$('#phone').text(json.phone)
 				$('#address').text(json.address)
 				$('#time').text(json.time)
