@@ -48,7 +48,7 @@ $(function(){
 				$('#dialog').dialog({
 			        autoOpen:false,
 			        width:650,
-			        height:580,
+			        height:700,
 			        modal:true
 		       }).dialog("open")
 				
@@ -121,31 +121,31 @@ $(function(){
       </td>
      </tr>
      <tr>
-      <td width="15%" class="text-left">업종</td>
+      <th width="15%" class="text-left">업종</th>
       <td width="45%" id="type"></td>
      </tr>
      <tr>
-      <td width="15%" class="text-left">전화</td>
+      <th width="15%" class="text-left">전화</th>
       <td width="45%" id="phone"></td>
      </tr>
      <tr>
-      <td width="15%" class="text-left">주소</td>
+      <th width="15%" class="text-left">주소</th>
       <td width="45%" id="address"></td>
      </tr>
      <tr>
-      <td width="15%" class="text-left">테마</td>
+      <th width="15%" class="text-left">테마</th>
       <td width="45%" id="theme"></td>
      </tr>
      <tr>
-      <td width="15%" class="text-left">영업시간</td>
+      <th width="15%" class="text-left">영업시간</th>
       <td width="45%" id="time"></td>
      </tr>
      <tr>
-      <td width="15%" class="text-left">가격대</td>
+      <th width="15%" class="text-left">가격대</th>
       <td width="45%" id="price"></td>
      </tr>
      <tr>
-      <td width="15%" class="text-left">좌석</td>
+      <th width="15%" class="text-left">좌석</th>
       <td width="45%" id="seat"></td>
      </tr>
      <tr>
