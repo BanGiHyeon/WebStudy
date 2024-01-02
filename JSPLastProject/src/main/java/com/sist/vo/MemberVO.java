@@ -1,6 +1,6 @@
 package com.sist.vo;
 /*
- *    ID                                        NOT NULL VARCHAR2(20)
+ *   ID                                        NOT NULL VARCHAR2(20)
  PWD                                       NOT NULL VARCHAR2(10)
  NAME                                      NOT NULL VARCHAR2(51)
  SEX                                                VARCHAR2(6)
@@ -16,8 +16,9 @@ package com.sist.vo;
  */
 import java.util.*;
 public class MemberVO {
-	private String id,pwd,name,sex,birthday,email,post,addr1,addr2,phone,content,admin,msg;
-	private Date regdate;
+    private String id,pwd,name,sex,birthday,email,post,
+          addr1,addr2,phone,content,admin,msg;
+    private Date regdate;
 	public String getId() {
 		return id;
 	}
@@ -102,5 +103,5 @@ public class MemberVO {
 	public void setRegdate(Date regdate) {
 		this.regdate = regdate;
 	}
-	
+	  
 }

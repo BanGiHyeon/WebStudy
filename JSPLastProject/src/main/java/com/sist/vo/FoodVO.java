@@ -2,8 +2,8 @@ package com.sist.vo;
 
 public class FoodVO {
 	private int fno;
-	private String poster,name,type,address,phone,theme,price,time,seat,content;
-	private double score;
+    private String poster,name,type,address,phone,theme,price,time,seat,content;
+    private double score;
 	public int getFno() {
 		return fno;
 	}
@@ -76,5 +76,5 @@ public class FoodVO {
 	public void setScore(double score) {
 		this.score = score;
 	}
-	
+    
 }
