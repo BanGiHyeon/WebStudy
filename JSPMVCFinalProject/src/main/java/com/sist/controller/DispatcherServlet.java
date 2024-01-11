@@ -130,6 +130,7 @@ public class DispatcherServlet extends HttpServlet {
 		// /JSPMVCFinalProject => ContextPath
 		// board/list.do
 		uri=uri.substring(request.getContextPath().length()+1);
+		System.out.println("사용자 요청 URI:"+uri);
 		try
 		{
 			for(String cls:clsList)
@@ -143,6 +144,7 @@ public class DispatcherServlet extends HttpServlet {
 					if(rm.value().equals(uri))
 					{
 						String jsp=(String)m.invoke(obj, request,response);
+						System.out.println("출력할 JSP:"+jsp);
 						if(jsp==null) // void => ajax
 						{
 							return;
@@ -162,7 +164,10 @@ public class DispatcherServlet extends HttpServlet {
 					}
 				}
 			}
-		}catch(Exception ex) {}
+		}catch(Exception ex) {
+			System.out.println("Error발생:"+ex.getMessage());
+			ex.printStackTrace();
+		}
 	}
 
 }
